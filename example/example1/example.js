@@ -19,6 +19,7 @@
 */
 /*
 * @flowType end
+* @flowId end1
 * @flowPrevious cond2
 * @flowTitle terminated
 * @flowCondition 2
@@ -32,6 +33,7 @@
 */
 /*
 * @flowType end
+* @flowId end2
 * @flowPrevious step5
 * @flowTitle email person
 */
