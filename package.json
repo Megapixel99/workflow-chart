@@ -1,0 +1,32 @@
+{
+  "name": "workflow-chart",
+  "version": "1.0.0",
+  "description": "Workflow Chart is a flowchart generator",
+  "main": "./index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "./index.js"
+  },
+  "author": "Seth Wheeler <wheelersc@cox.net>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Megapixel99/workflow-chart.git"
+  },
+  "bin": "./bin/wfc",
+  "bugs": {
+    "url": "https://github.com/Megapixel99/workflow-chart/issues"
+  },
+  "keywords": [
+    "doc",
+    "documentation",
+    "image",
+    "canvas"
+  ],
+  "dependencies": {
+    "canvas": "^2.8.0",
+    "hex-and-rgba": "^1.4.2",
+    "rgb-hex": "^3.0.0",
+    "yargs": "^17.0.1"
+  }
+}

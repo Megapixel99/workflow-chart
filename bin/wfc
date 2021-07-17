@@ -1,0 +1,30 @@
+#!/usr/bin/env node
+
+const yargs = require('yargs/yargs')
+const { hideBin } = require('yargs/helpers')
+const wfc = require('../index.js');
+
+const argv = yargs(hideBin(process.argv))
+    .option('output', {
+        alias: 'o',
+        description: 'The location of the output folder relative to the current directory, defaults to the current directory',
+        default: '.',
+        type: 'string',
+    })
+    .option('input', {
+        alias: 'i',
+        description: 'The location of the input file(s)/folder(s) relative to the current directory, multiple locations can be used if seperated with commas, defaults to the current directory',
+        default: '.',
+        type: 'string',
+    })
+    .option('filename', {
+        alias: 'f',
+        description: 'The name of the output file, defaults to flow.png',
+        default: 'flow.png',
+        type: 'string',
+    })
+    .help()
+    .alias('help', 'h')
+    .argv;
+
+wfc(argv);
