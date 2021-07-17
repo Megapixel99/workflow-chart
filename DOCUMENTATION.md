@@ -1,6 +1,6 @@
 # Documentation
 
-Work Flow Chart comprises its flows with steps, each box that is generated in the final image is considered a step.
+Work Flow Chart comprises its flows with steps, each box that is generated in the is considered a step. See the [example output](https://github.com/Megapixel99/workflow-chart/blob/master/example/exampleFlow.png) to see the various steps.
 
 ### Keywords
 ---
@@ -17,6 +17,9 @@ Usage:
 ```java
 /*
 * @flowType start
+*/
+/*
+* @flowType end
 */
 ```
 
@@ -60,7 +63,7 @@ Usage:
 ```
 
 ###### flowCondition
-`flowCondition` is used if the current step extends from the previous only on a certain condition such as the number of objects in a response being equal to five.
+`flowCondition` is used if the current step extends from the previous only on a certain condition such as the number of objects in a response being equal to five. In the [example output](https://github.com/Megapixel99/workflow-chart/blob/master/example/exampleFlow.png) these can be seen as the (smaller) white boxes in the flow.
 
 Possible Values:
 - any string
@@ -73,7 +76,7 @@ Usage:
 ```
 
 ###### flowLegend
-`flowLegend` can be used to clarify any acronyms which are used in the flow. In the [example output](https://github.com/Megapixel99/workflow-chart/blob/master/example/exampleFlow.png), the acronym is shown in the box in the upper-right corner of the image.
+`flowLegend` can be used to clarify any acronyms which are used in the flow. In the [example output](https://github.com/Megapixel99/workflow-chart/blob/master/example/exampleFlow.png), the acronym  `API` is shown in the box in the upper-right corner of the image.
 
 Possible Values:
 - any two strings
